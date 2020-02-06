@@ -1,0 +1,174 @@
+
+#logo {
+    z-index: 3;
+    width: 100%;
+    height: 1361px;
+    background-attachment: fixed;
+    background-image: url('img/website-logo.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#nav-bar {
+    animation-name: navbackground;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    width: 100%;
+    margin-top: 0;
+    position: sticky;
+    top: 0px;
+    word-spacing: 20px;
+    text-align: center;
+}
+
+
+#nav-bar li {
+    display: inline-block;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: Arial Black;
+    text-transform: capitalize;
+    color: azure;
+}
+
+body {
+    
+    margin: 0;
+}
+
+
+@keyframes navbackground {
+    
+    0% {
+        
+        background: linear-gradient(to right, lightblue, blue, blue);
+    }
+    
+    100% {
+        
+        background: linear-gradient(to right, blue, blue, lightblue);
+    }
+}
+
+/* Fonts styling */
+
+
+h1 {
+    font-family: fantasy;
+    color: chartreuse;
+    text-transform: capitalize;
+}
+
+h2 {
+    font-family: cursive;
+    color: darkcyan;
+    text-decoration: none;
+}
+
+h3 {
+    font-family: monospace;
+    color: cadetblue;
+}
+
+h4 {
+    font-family: Arial Black;
+    color: chocolate;
+}
+
+h5 {
+    font-family: fantasy;
+    color: darkcyan;
+}
+
+h6 {
+    font-family: Arial Narrow;
+    color: darkorange;
+}
+
+p {
+    font-family: sans-serif;
+    color: dimgrey;
+}
+#party-buttons div {
+    display: inline-block;
+    
+}
+
+#party-button {
+    
+    background-color: #D8D8D8;
+    font-size: 50px;
+    font-family: Arial Narrow;
+    padding: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transform: transition;
+    transition: all .2s ease-in-out;
+    position: relative;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+#party-button:active {
+    
+    background-color: dodgerblue;
+    border: 2.5px double black;
+}
+
+#store-catalog li {
+    display: inline-block;
+}
+
+#store-catalog li img {
+    
+    width: 240px;
+    height: 160px;
+    border-radius: 10px;
+}
+
+#store-catalog li h5 {
+    
+    text-align: center;
+    font-family: Tahoma;
+}
+
+#store-catalog {
+    opacity: 0.1;
+}
+
+#coming-soon-banner {
+    
+    font-family: Arial Rounded MT Bold;
+    text-transform: uppercase;
+    color: white;
+    position: relative;
+    top: 240px;
+    left: 6px;
+    width: 100%;
+    text-align: center;
+    font-size: 70px;
+    background-color: red;
+    z-index: 1;
+    animation-name: BackAndForth;
+    animation-duration: 1.3s;
+    animation-iteration-count: infinite;
+    
+}
+
+@keyframes BackAndForth {
+    
+    from {
+        
+        opacity: 1;
+    }
+    
+    to {
+        
+        opacity: .2;
+    }
+}
+
+#new-stuff {
+    background-color: lightgray;
+}

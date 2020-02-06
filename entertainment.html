@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="main-style.css" />
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+        <title>Entertainment | Allen Henderson</title>
+        <meta name="description" content="Somebody came to party!">
+        <style>
+            #logo span {
+                
+                font-weight: bold; 
+                text-transform: uppercase; 
+                position: relative; 
+                top: 300px;
+                left: 450px;
+                font-size: 50px; 
+                color: aliceblue; 
+                font-family: Arial Bold;
+                animation: 1s TitleOutline infinite;
+            }
+            
+            @keyframes TitleOutline {
+                
+                50% {
+                    
+                    text-shadow: 2px 2px 30px blue;
+                }
+                
+                100% {
+                    
+                    text-shadow: 2px 2px 30px red;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div id="logo">
+                <span>You want to party?</span>
+            </div>
+        </header>
+        
+        <div id="nav-bar">
+                <li onclick="window.location = '/';">home</li>
+                <li onclick="window.location = 'about.html';">about</li>
+                <li onclick="window.location = 'contact.html';">contact</li>
+                <li onclick="window.location = 'entertainment.html';">entertainment</li>
+                <li onclick="window.location = 'store.html';">store</li>
+        </div>
+        
+        <p>You will find photos and videos here.</p>
+        
+        <div id="party-buttons" align="center">
+            <div id="party-button">albums</div>
+            <div id="party-button">rants</div>
+        </div>
+    </body>
+</html>
